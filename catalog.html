@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo" href="index.html">
+                <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студия Nerds">
+            </a>
+            <ul class="site-navigation">
+                <li>
+                   <a href="studio.html">Студия</a>
+                </li>
+                <li>
+                    <a href="client.html">Клиенты</a>
+                </li>
+                <li>
+                    <a href="catalog.html" class="site-navigation-active">Магазин</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+            <ul class="cart">
+                <li class="cart-item">
+                    <a href="#">Корзина</a>
+                </li>
+            </ul>
+        </nav>
+    </header>  
+    <main class="container"> 
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
+        <section class="filters">
+            <h2 class="visually-hidden">Фильтр шаблонов</h2>
+            <!-- Здесь будет форма -->
+        </section> 
+<!--    Каталог товаров-->
+        <section class="catalog">
+            <h2 class="visually-hidden">Список готовых шаблонов</h2>
+            <ul class="catalog-list">
+                <li class="catalog-item">
+                    <img src="img/img-sedona.jpg" alt="Sedona">
+                </li>
+                <li class="catalog-item">
+                    <img src="img/img-pink.jpg" alt="Pink App">
+                </li>
+                <li class="catalog-item">
+                    <img src="img/img-barbershop.jpg" alt="Barbershop">
+                </li>
+                <li class="catalog-item">
+                    <img src="img/img-mishka.jpg" alt="MISHKA">
+                </li>
+                <li class="catalog-item">
+                    <img src="img/img-aplus.jpg" alt="A Plus">
+                </li>
+                <li class="catalog-item">
+                    <img src="img/img-kvast.jpg" alt="КВАСТ">
+                </li>   
+            </ul>
+<!--    Пагинатор        -->
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current">
+                    <a>1</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#">Следующая</a>
+                </li>
+            </ul>        
+        </section>        
+    </main>
+    <footer class="main-footer">
+        <div class="footer-contacts">
+            <img src="img/Map.jpg" alt="map">
+            <b>NЁRDS DESIGN STUDIO</b>
+            <p>
+                    191186, Санкт-Петербург,
+                <br>
+                    ул. Б. Конюшенная, д. 19/8   
+            </p>            
+                <p>
+                   тел. +7 (812) 275-75-75
+                </p>  
+            <a class="button" href="#">Напишите нам</a>
+         </div>
+         <div class="footer-social">
+            <b>Давайте дружить, это выгодно!</b>
+            <p>
+                Скидка 10% для друзей из социальных сетей.
+            </p>
+            <ul>
+                <li>
+                    <a class="social-button" href="#">
+                        Вконтакте
+                        <img src="img/svg/vk-icon.svg" alt="vk">
+                    </a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">
+                        Фейсбук
+                        <img src="img/svg/fb-icon.svg" alt="fb">
+                    </a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">
+                        Инстаграм
+                        <img src="img/svg/insta-icon.svg" alt="instagram">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>     
+<!-- Модальное окно обратной связи"Напишите нам"       -->
+    <section class="modal modal-login">
+        <h2>Напишите нам</h2>
+        <p>Ваше имя:</p>
+        <p>Ваш e-mail:</p>
+        <p>Текст письма:</p>
+<!-- Здесь будет форма -->
+        <span class="modal-close">x</span>
+    </section>              
+</body>
+</html>
