@@ -35,7 +35,25 @@
         <h1 class="page-title">Магазин готовых шаблонов</h1>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр шаблонов</h2>
-            <!-- Здесь будет форма -->
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="" type="radio" name="website-type" value="adaptive" id="filter-adaptive" checked>
+                            <label for="filter-adaptive">Адаптивная</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="" type="radio" name="website-type" value="fix" id="filter-fix" >
+                            <label for="filter-fix">Фиксированная</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="" type="radio" name="website-type" value="rubber" id="filter-rubber" >
+                            <label for="filter-rubber">Резиновая</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
         </section> 
 <!--    Каталог товаров-->
         <section class="catalog">
@@ -121,11 +139,23 @@
 <!-- Модальное окно обратной связи"Напишите нам"       -->
     <section class="modal modal-login">
         <h2>Напишите нам</h2>
-        <p>Ваше имя:</p>
-        <p>Ваш e-mail:</p>
-        <p>Текст письма:</p>
-<!-- Здесь будет форма -->
-        <span class="modal-close">x</span>
-    </section>              
+        <p class="modal-info">Напишите нам по интересующему вас вопросу, и мы с вами свяжемся.</p>
+        <form action="modal-form">
+            <p class="modal-item">
+                 <label for="modal-name">Ваше имя:</label>
+                 <input id="modal-name" type="text" name="modal-name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p class="modal-item">
+                <label for="modal-email">Ваш e-mail:</label>
+                <input id="modal-email" type="text" name="modal-mail" value="" placeholder="email@gmail.com">    
+            </p>
+            <p class="modal-item">
+                <label for="modal-text">Текст письма:</label>
+                <textarea name="modal-text" id="modal-text" cols="30" rows="5" placeholder="В свободной форме"></textarea>                
+            </p>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
 </body>
 </html>
