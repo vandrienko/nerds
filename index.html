@@ -30,6 +30,7 @@
             </ul>
             <ul class="cart">
                 <li class="cart-item">
+                    <span class="cart-icon"></span>
                     <a href="#">Корзина</a>
                 </li>
             </ul>
@@ -154,6 +155,7 @@
             <h2 class="visually-hidden">Партнеры</h2>
             <ul class="partner-list">
                 <li class="partner-item">
+                    <p></p>   
                     <a href="#" class="">
                         <img src="img/logo-1.png" alt="html academy">
                     </a>
@@ -221,11 +223,23 @@
 <!-- Модальное окно обратной связи"Напишите нам"       -->
     <section class="modal modal-login">
         <h2>Напишите нам</h2>
-        <p>Ваше имя:</p>
-        <p>Ваш e-mail:</p>
-        <p>Текст письма:</p>
-<!-- Здесь будет форма -->
-        <span class="modal-close">x</span>
+        <p class="modal-info">Напишите нам по интересующему вас вопросу, и мы с вами свяжемся.</p>
+        <form action="modal-form">
+            <p class="modal-item">
+                 <label for="modal-name">Ваше имя:</label>
+                 <input id="modal-name" type="text" name="modal-name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p class="modal-item">
+                <label for="modal-email">Ваш e-mail:</label>
+                <input id="modal-email" type="text" name="modal-mail" value="" placeholder="email@gmail.com">    
+            </p>
+            <p class="modal-item">
+                <label for="modal-text">Текст письма:</label>
+                <textarea name="modal-text" id="modal-text" cols="30" rows="5" placeholder="В свободной форме"></textarea>                
+            </p>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
 </body>
 </html>
