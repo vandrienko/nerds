@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+    font-family: Roboto, Arial, sans-serif;  
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #283136;
+    
+    background-color: #ffffff;
+}
+
+a {
+/*    Убираем подчеркивание у ссылок*/
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+    
+    background-color:  #eeeeee;
+}
+
+.site-navigation,
+.cart{
+    
+    font-size: 16px;
+    line-height: 30px;
+    font-weight:700;
+    
+/*    Убираем маркер у ссылок*/
+    list-style: none;
+}
+
+.site-navigation a,
+.cart a{
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.cart a:hover{
+    color: #fb565a;
+}
+
+.site-navigation a:focus,
+.cart a:focus{
+    color: #000000;
+    opacity: 0.3;
+    
+}
+
+.site-navigation a:active,
+.cart a:active{
+    border-bottom: 2px solid #fb565a;
+    
+}
