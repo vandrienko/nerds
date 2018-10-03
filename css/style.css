@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     
-    font-family: Roboto, Arial, sans-serif;  
+    font-family: "Roboto Regular", Arial, sans-serif;  
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -15,6 +15,12 @@ a {
 /*    Убираем подчеркивание у ссылок*/
     text-decoration: none;
 }
+.main-header-logo:hover{
+    opacity: 0.8;
+}
+.main-header-logo:focus{
+    opacity: 0.3;
+    }
 
 .main-navigation {
     font-size: 16px;
@@ -53,8 +59,21 @@ a {
     
 }
 
-.site-navigation a:active,
-.cart a:active{
-    border-bottom: 2px solid #fb565a;
+.slider .slider-list {
+    list-style: none;
+}
+
+.slider-caption {
+    font-family: "Roboto Medium", arial;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+}
+
+.button{
+    font-family: "Roboto Medium", arial;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
     
 }
