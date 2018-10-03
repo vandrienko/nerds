@@ -7,7 +7,6 @@ body{
     line-height: 24px;
     font-weight: 400;
     color: #283136;
-    
     background-color: #ffffff;
 }
 
@@ -71,9 +70,52 @@ a {
 }
 
 .button{
-    font-family: "Roboto Medium", arial;
+    background-color: #fb565a;
+    
+    font-family: "Roboto Medium", arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
+    text-transform: uppercase;
+}
+
+.service-caption{
+    font-family: "Roboto Bold", Arial, sans-serif;
+    text-transform: uppercase;
+    list-style: none;
     
+}
+
+.service-item{
+    list-style: none;
+}
+
+.service-text{
+    font-size: 16px;
+    color: #283136;
+    font-family: "Roboto Regular", Arial, sans-serif; 
+}
+
+.botton-green{
+    background-color: #00ca74;
+}
+.botton-yellow{
+    background-color: #efc84a;
+}
+.brief-info-promo{
+    font-family: "Roboto Medium", arial, sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+}
+.brief-info-item{
+    list-style: none;
+}
+.brief-info-item:before{
+    content: "";
+    position: absolute;
+    background: #fb565a;
+    width: 25px;
+    height: 2px;
+    left: -35.5px;
+    top: 10px;
 }
