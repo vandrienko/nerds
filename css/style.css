@@ -64,16 +64,30 @@ a {
 }
 
 .slider-caption {
-    font-family: "Roboto Medium", arial;
+    font-family: "Roboto Medium", Arial, sans-serif;
     font-size: 55px;
     line-height: 55px;
     color: #000000;
 }
 
 .button{
-    font-family: "Roboto Medium", arial;
+    font-family: "Roboto Medium", Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
     
 }
+
+.brief-info-promo{
+    font-family: "Roboto Medium", Arial, sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.brief-info-heading,
+.features-heading{
+   text-transform: uppercase; 
+   color: #000000;
+}
+
