@@ -7,6 +7,7 @@ body{
     line-height: 24px;
     font-weight: 400;
     color: #283136;
+    
     background-color: #ffffff;
 }
 
@@ -70,13 +71,8 @@ a {
 }
 
 .button{
-<<<<<<< HEAD
     font-family: "Roboto Medium", Arial, sans-serif;
-=======
     background-color: #fb565a;
-    
-    font-family: "Roboto Medium", arial, sans-serif;
->>>>>>> origin/master
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
@@ -90,7 +86,7 @@ a {
     
 }
 
-<<<<<<< HEAD
+
 .brief-info-promo{
     font-family: "Roboto Medium", Arial, sans-serif;
     font-size: 45px;
@@ -104,7 +100,7 @@ a {
    color: #000000;
 }
 
-=======
+
 .service-item{
     list-style: none;
 }
@@ -138,4 +134,4 @@ a {
     left: -35.5px;
     top: 10px;
 }
->>>>>>> origin/master
+
