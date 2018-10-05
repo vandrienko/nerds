@@ -1,0 +1,9 @@
+diff a/css/style.css b/css/style.css	(rejected hunks)
+@@ -7,7 +7,6 @@
+     line-height: 24px;
+     font-weight: 400;
+     color: #283136;
+-    
+     background-color: #ffffff;
+ }
+ 
