@@ -15,10 +15,11 @@ a {
 /*    Убираем подчеркивание у ссылок*/
     text-decoration: none;
 }
+
 .main-header-logo:hover{
     opacity: 0.8;
 }
-.main-header-logo:focus{
+.main-header-logo:active{
     opacity: 0.3;
     }
 
@@ -47,13 +48,18 @@ a {
     color: #000000; 
 }
 
+.cart .cart-item .cart-icon{
+    background-image: url("img/svg/cart-icon.svg");
+    color: aqua;
+}
+
 .site-navigation a:hover,
 .cart a:hover{
     color: #fb565a;
 }
 
-.site-navigation a:focus,
-.cart a:focus{
+.site-navigation a:active,
+.cart a:active{
     color: #000000;
     opacity: 0.3;
     
@@ -72,12 +78,57 @@ a {
 
 .button{
     font-family: "Roboto Medium", Arial, sans-serif;
-    background-color: #fb565a;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
     text-transform: uppercase;
 }
+
+.button:active{
+    
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button-red{
+   background-color: #fb565a;  
+}
+
+.button-red:hover{
+   background-color: #e74246;  
+   
+}
+
+.button-red:active{
+   background-color: #d7373b;  
+   box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);
+
+}
+
+.botton-green{
+    background-color: #00ca74;
+}
+
+.botton-green:hover{
+    background-color: #00bc6c;
+}
+
+.botton-green:active{
+    background-color: #00aa62;
+    box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);
+}
+.botton-yellow{
+    background-color: #efc84a;
+}
+
+.botton-yellow:hover{
+    background-color: #eab534;
+}
+
+.botton-yellow:active{
+    background-color: #e5a722;
+    box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);    
+}
+
 
 .service-caption{
     font-family: "Roboto Bold", Arial, sans-serif;
@@ -111,12 +162,6 @@ a {
     font-family: "Roboto Regular", Arial, sans-serif; 
 }
 
-.botton-green{
-    background-color: #00ca74;
-}
-.botton-yellow{
-    background-color: #efc84a;
-}
 .brief-info-promo{
     font-family: "Roboto Medium", Arial, sans-serif;
     font-size: 45px;
@@ -146,6 +191,14 @@ a {
 
 .partner-item{
     opacity: 0.2;
+}
+
+.partner-item:hover{
+    opacity: 1;
+}
+
+.partner-item:active{
+    opacity: 0.1;
 }
 
 .footer-social-promo{
