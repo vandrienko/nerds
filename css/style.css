@@ -49,8 +49,8 @@ a {
 }
 
 .cart .cart-item .cart-icon{
-    background-image: url("img/svg/cart-icon.svg");
-    color: aqua;
+    background-image: url("img\");
+    background-color: red;
 }
 
 .site-navigation a:hover,
