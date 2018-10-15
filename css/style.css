@@ -49,8 +49,8 @@ a {
 }
 
 .cart .cart-item .cart-icon{
-    background-image: url("img\");
-    background-color: red;
+/*     background-image: url("img\");
+    background-color: red; */
 }
 
 .site-navigation a:hover,
@@ -218,4 +218,17 @@ a {
     color: #000000;
     line-height: 18px;
 
+}
+
+.page-title{
+    font-family: "Roboto Medium", Arial, sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+}
+
+.filter legend{
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
 }
