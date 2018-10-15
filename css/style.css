@@ -7,8 +7,8 @@ body{
     line-height: 24px;
     font-weight: 400;
     color: #283136;
-    
-    background-color: #ffffff;
+    color: #283136;    
+    background-color: #ffffff;    
 }
 
 a {
@@ -48,10 +48,14 @@ a {
     color: #000000; 
 }
 
+<<<<<<< HEAD
 .cart .cart-item .cart-icon{
-/*     background-image: url("img\");
-    background-color: red; */
+    background-image: url("img\");
+    background-color: red;
 }
+=======
+
+>>>>>>> origin/master
 
 .site-navigation a:hover,
 .cart a:hover{
@@ -63,6 +67,13 @@ a {
     color: #000000;
     opacity: 0.3;
     
+}
+
+ .cart-icon{
+    background-image: url("../img/svg/cart-icon.svg");
+    height: 15px;
+    width: 15px;
+    display: inline-block;
 }
 
 .slider .slider-list {
@@ -208,6 +219,18 @@ a {
     color: #000000;
 }
 
+.social-item{
+    list-style: none;
+    
+}
+
+.social-button img{
+    padding: 10px;
+    border-radius: 50%;   
+   background-color: blueviolet;
+    
+}
+
 .modal-hidden{
     font-family: "Roboto Medium", Arial, sans-serif;
     font-size: 45px;
@@ -219,6 +242,7 @@ a {
     line-height: 18px;
 
 }
+<<<<<<< HEAD
 
 .page-title{
     font-family: "Roboto Medium", Arial, sans-serif;
@@ -232,3 +256,5 @@ a {
     line-height: 30px;
     color: #000000;
 }
+=======
+>>>>>>> origin/master
