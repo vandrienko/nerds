@@ -358,15 +358,18 @@ input[type="radio"].visually-hidden {
 
 .service {
     display: flex;
+    min-height: 347px;
     padding-top: 80px;
     padding-bottom: 80px;
+
+    border-bottom: 2px solid #eee;
 }
 
 .service-list {
     display: flex;
     margin: 0;
     padding: 0;
-
+    
 }
 
 .service-list li:not(:last-child) {
@@ -375,7 +378,7 @@ input[type="radio"].visually-hidden {
 
 .service-caption{
     margin: 0;
-    padding-top: 100px;
+    padding-top: 170px;
     font-size: 24px;
     line-height: 30px;
     font-family: "Roboto Bold", Arial, sans-serif;
@@ -386,6 +389,7 @@ input[type="radio"].visually-hidden {
 
 .service-text {
     width: 260px;
+    margin: 0;
 }
 
 .service-item-image {
@@ -408,12 +412,52 @@ input[type="radio"].visually-hidden {
 
 
 .service-item{
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     list-style: none;
     width: 300px;
-    padding-top: 71px;
+    
+    
+    /* padding-top: 71px; */
+}
+
+.service-img-website::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 1;
+   
+    display: block;
+    width: 300px;
+    height: 146px;
+    /* background: url(../img/service1.jpg) no-repeat;     */
+}
+
+.service-img-application::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 1;
+   
+    display: block;
+    width: 300px;
+    height: 146px;
+    background: url(../img/service2.jpg) no-repeat;    
+}
+
+.service-img-presentation::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 1;
+   
+    display: block;
+    width: 300px;
+    height: 146px;
+    background: url(../img/service3.jpg) no-repeat;    
 }
 
 .service-text{
