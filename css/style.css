@@ -21,11 +21,6 @@ img {
     height: auto;
 }
 
-/* .container-body { */
-    /* width: 100%; */
-    /* margin: 0 auto; */
-/* } */
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -43,6 +38,11 @@ input[type="radio"].visually-hidden {
             clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* .container-body { */
+    /* width: 100%; */
+    /* margin: 0 auto; */
+/* } */
 
 .main-header {
     font-size: 16px;
@@ -78,32 +78,44 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
 }
 
-.site-navigation,
-.cart {    
-    display: flex; 
-    margin: 0;
-    padding: 0;
-    padding-top: 6px;
-
-    font-size: 16px;
-    line-height: 30px;
-    font-weight:normal;
-
-    list-style: none;
-}
-
-.site-navigation {
+.site-navigation {    
     display: flex; 
     flex-wrap: wrap;
     width: 640px;
+    margin: 0;
     margin-left: 157px;
+    padding: 0;
+    padding-top: 6px;
+
+    font-weight:normal;
+    font-size: 16px;
+    line-height: 30px;
+    
+    list-style: none;
 }
 
 .site-navigation li {
+    position: relative;
+
     margin-right: 47px;
 }
 
-.site-navigation a,
+.site-navigation-active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 25px;
+    left: 0;
+    /* bottom: 21px; */
+    
+    background-color: #fb565a;
+} 
+
+.site-navigation a {
+    color: #000000; 
+}
+
 .cart a {
     color: #000000; 
 }
@@ -120,16 +132,34 @@ input[type="radio"].visually-hidden {
     
 }
 
- .cart-icon{
+.site-navigation a:disabled {
+    background-color: #00bc6c;
+    color: blue;
+}
+
+.cart {    
+    display: flex; 
+    margin: 0;
+    padding: 0;
+    padding-top: 6px;
+
+    font-size: 16px;
+    line-height: 30px;
+    font-weight:normal;
+
+    list-style: none;
+}
+
+.cart-icon {
     display: inline-block;
     width: 15px;
     height: 15px;   
     margin-right: 20px; 
+
+    vertical-align: middle;
     
     background-image: url("../img/svg/cart-icon.svg");
 }
-
-
 
 /* --------------------------------------------------------------- */
 .slider {
