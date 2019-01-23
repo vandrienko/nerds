@@ -1,0 +1,54 @@
+diff a/index.html b/index.html	(rejected hunks)
+@@ -15,28 +15,30 @@
+                     <a class="main-header-logo">
+                         <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студия Nerds">
+                     </a>
+-                    <ul class="site-navigation">
+-                        <li>
+-                            <a href="">Студия</a>
+-                        </li>
+-                        <li>
+-                            <a href="">Клиенты</a>
+-                        </li>
+-                        <li>
+-                            <a href="catalog.html ">Магазин</a>
+-                        </li>
+-                        <li>
+-                            <a href="">Контакты</a>
+-                        </li>
+-                    </ul>
+-                    <ul class="cart">
+-                        <li class="cart-item">                            
+-                            <a href="#">
+-                                <span class="cart-icon"></span>
+-                                Корзина
+-                            </a>
+-                        </li>
+-                    </ul>
++                    <div class="container">
++                        <ul class="site-navigation">
++                            <li>
++                                <a href="">Студия</a>
++                            </li>
++                            <li>
++                                <a href="">Клиенты</a>
++                            </li>
++                            <li>
++                                <a href="catalog.html ">Магазин</a>
++                            </li>
++                            <li>
++                                <a href="">Контакты</a>
++                            </li>
++                        </ul>
++                        <ul class="cart">
++                            <li class="cart-item">                            
++                                <a href="#">
++                                    <span class="cart-icon"></span>
++                                    Корзина
++                                </a>
++                            </li>
++                        </ul>
++                    </div>  
+                 </nav>
+                 <section class="slider">
+                     <div class="container">
