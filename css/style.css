@@ -185,13 +185,15 @@ input[type="radio"].visually-hidden {
     
     background-color: #eeeeee;
   }
-.container {
+.main-container {
+    position: relative;
     width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
 }
-  .slider-controls {
+
+.slider-controls {
     position: absolute;
     left: 50%;
     bottom: 104px;
@@ -234,6 +236,7 @@ input[type="radio"].visually-hidden {
   }
   
   .slider-list {
+      width: 700px;
     margin: 0;
     padding: 0;
     
@@ -314,6 +317,7 @@ input[type="radio"].visually-hidden {
     width: 240px;
     padding: 17px 0;
     
+    font-weight: 500;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
@@ -407,6 +411,7 @@ input[type="radio"].visually-hidden {
 .service {
     display: flex;
     min-height: 347px;
+    /* margin-bottom: 74px; */
     padding-top: 80px;
     padding-bottom: 80px;
 
@@ -426,7 +431,8 @@ input[type="radio"].visually-hidden {
 
 .service-caption{
     margin: 0;
-    padding-top: 170px;
+    padding-top: 171px;
+    padding-bottom: 20px;
     font-size: 24px;
     line-height: 30px;
     font-family: "Roboto Bold", Arial, sans-serif;
@@ -445,6 +451,26 @@ input[type="radio"].visually-hidden {
     order: -1;
 }
 
+
+.main-container .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about-us {
+    width: 680px;
+}
+
+.brief-info {
+    padding-top: 75px;
+}
+
+.features {
+    width: 360px;
+    padding-top: 40px;
+}
+
 .brief-info-promo{
     font-family: "Roboto Medium", Arial, sans-serif;
     font-size: 45px;
@@ -458,6 +484,11 @@ input[type="radio"].visually-hidden {
    color: #000000;
 }
 
+
+.partner-list {
+    display: flex;
+    justify-content: space-between;
+}
 
 .service-item{
     position: relative;
@@ -520,6 +551,7 @@ input[type="radio"].visually-hidden {
     line-height: 45px;
 }
 .brief-info-item{
+    position: relative;
     list-style: none;
 }
 .brief-info-item:before{
