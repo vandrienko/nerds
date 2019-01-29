@@ -261,7 +261,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-list {
-    /* width: 700px; */
+    /* width: 100%; */
   margin: 0 auto;
   padding: 0;
   
@@ -714,35 +714,91 @@ input[type="radio"].visually-hidden {
 /* ______________________Секция контакты_____________________________ */
 .contacts {
     position: relative;
+    
+
 }
 
 .map {
+    width: 1157px;
+    height: 416px;
+}
 
+.map img {
+    /* background-size: cover; */
 }
 
 .contacts-info {
     position: absolute;
-    top: 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 54px;
     left: 0px;
+padding:  50px 50px;
+padding-bottom: 47px;
+    text-align: left;
 
-    text-align: center;
-
-    width: 319px;
-    height: 308px;
+    width: 219px;
+    height: 211px;
 
     background-color: #ffffff;
   
     
 }
+.contacts-info b {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 23px;
+}
+
+.info-container {
+    /* height: 67px; */
+}
+
+.contacts-info p {
+    /* margin: 0; */
+
+    /* line-height: 18px; */
+    
+}
+
+.contacts-address {
+    margin: 0;
+    margin-bottom: 18px;
+    line-height: 18px;
+}
+
+.contacts-phone {
+    margin: 0;
+    line-height: 18px;
+}
 
 .contacts-info a {
+    width: 219px;
     /* display: block; */
-    margin: 0 auto;
+    margin-top:  auto;
 }
 
 
+/* Модальное окно обратной связи"Напишите нам */
+.modal {
+    display: none;
+}
 
 /* ______________________________________Подвал______________________________ */
+
+
+.main-footer {
+    display: flex;
+}
+
+.promo-container {
+    display: flex;
+    width: 560px;
+    order: 2;
+
+}
+
 .footer-social-promo{
     /* font-family: "Roboto Regular", Arial, sans-serif;  */
     line-height: 36px;
@@ -750,14 +806,24 @@ input[type="radio"].visually-hidden {
     color: #000000;
 }
 
-.social-item{
+.social-item {
     list-style: none;
     
+}
+
+.social-list {
+    margin: 0;
+    width: 358px;
+    padding: 0;
+    display: flex;
+    order: 1;
 }
 
 .social-button img{
     padding: 10px;
     border-radius: 50%;   
+    width: 50px;
+    height: 50px;
    background-color: blueviolet;
     
 }
