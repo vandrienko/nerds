@@ -128,7 +128,7 @@ a.disabled {
     position: absolute;
     height: 2px;
     width: 100%;
-    top: 25px;
+    top: 33px;
     left: 0;
     
     background-color: #fb565a;
@@ -387,6 +387,10 @@ a.disabled {
 
 /* ---------------Блок маин ----------------*/
 .main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.main {
     position: relative;
     width: 1200px;
     margin: 0 auto;
@@ -524,7 +528,7 @@ a.disabled {
 } */
 
 /* --------Блок Информация о компании-------- */
-.main-container .container {
+.main .container {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #eee;
@@ -635,7 +639,7 @@ a.disabled {
 
 .features-determination{
     margin: 0;
-    margin-right: 10px;
+    margin-right: 25px;
     font-size: 45px;
 }
 
@@ -746,13 +750,15 @@ a.disabled {
 
 /* ______________________Секция контакты_____________________________ */
 .contacts {
-    position: relative;
+    /* position: relative; */
     
 
 }
 
-.map {
-    width: 1157px;
+.map {   
+    position: relative;
+    margin: 0 auto;
+    width: 1440px;
     height: 416px;
 }
 
@@ -766,7 +772,7 @@ a.disabled {
     flex-direction: column;
     justify-content: space-between;
     top: 54px;
-    left: 0px;
+    left: 140px;
     padding:  50px 50px;
     padding-bottom: 47px;
     text-align: left;
