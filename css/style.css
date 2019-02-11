@@ -414,12 +414,14 @@ a.disabled {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
+    margin-left: -100px;
     padding: 0;
     
 }
 
 .service-list li:not(:nth-child(3n)) {
-    margin-right: 100px;  
+    /* margin-right: 100px;   */
+    /* background-color: #00bc6c; */
 }
 
 .service-item {
@@ -428,6 +430,7 @@ a.disabled {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    margin-left: 100px;
     /* justify-content: space-between; */
     list-style: none;
     width: 300px;
