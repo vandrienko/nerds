@@ -1021,7 +1021,11 @@ a.disabled {
     text-transform: uppercase;
     font-weight: 700;
 }
-  
+
+.filter__item-range {
+    margin-bottom: 57px;
+}
+
   .range-controls {
     position: relative;
     
@@ -1103,6 +1107,87 @@ a.disabled {
   .max-price {
     text-align: right;
   }
+
+/* Радио кнопки */
+.filter-radio {
+    padding-top: 1px;
+
+}
+
+.filter-radio h3 {
+    margin: 0;
+    margin-bottom: 13px;
+
+    text-transform: uppercase;
+}
+
+.radio-list {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+
+.radio-item {
+    position: relative;
+
+    margin-bottom: 17px;      
+}
+
+.radio-item::before {
+    position: absolute;
+    content: "";
+    left: 1px;
+    top: -2px;
+
+    width: 15px;
+    height: 15px;
+    border: 5px solid rgba(40, 49, 54, 0.4);
+    border-radius: 50%;
+    outline: none;
+}
+
+.filter__radio-input:checked + label::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 7px;
+
+    width: 8px;
+    height: 8px; 
+    border-radius: 50%;
+
+    background-color: rgba(40, 49, 54, 0.4);
+    
+    /* outline: none; */
+}
+.filter__radio-label {
+    position: relative;
+    z-index: 10;
+    display: block;
+    
+    padding-left: 37px;
+    /* cursor: pointer; */
+}
+
+
+
+
+.filter__radio-label:hover {
+    color: rgba(40, 49, 54, 1); 
+
+}
+
+.radio-item .filter__radio-label:hover::before {
+    background-color:rgba(40, 49, 54, 1);
+    cursor: pointer;
+}
+
+.radio-item:hover::before {
+    border-color: rgba(40, 49, 54, 1);
+    cursor: pointer;
+}
+
 
   /* Каталог товаров */
 .catalog {

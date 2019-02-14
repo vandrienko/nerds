@@ -46,36 +46,36 @@
         <section class="filters">
             <h2 class="visually-hidden">Фильтр шаблонов</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset class="filter-item">
-                        <legend>Стоимость:</legend>
-                        <div class="range-filter">
-                          <div class="range-controls">
+                <fieldset class="filter-item filter__item-range">
+                    <legend>Стоимость:</legend>
+                    <div class="range-filter">
+                        <div class="range-controls">
                             <div class="scale">
                               <div class="bar" style="margin-left: 20%; width: 30%"></div>
                             </div>
                             <div class="toggle toggle-min"></div>
                             <div class="toggle toggle-max"></div>
-                          </div>
-                          <div class="price-controls">
+                            </div>
+                            <div class="price-controls">
                             <label class="min-price">от <input name="min-price" type="text" value="0"></label>
                             <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-                          </div>
                         </div>
-                      </fieldset>
-                <fieldset class="filter-item">
+                    </div>
+                </fieldset>
+                <fieldset class="filter-item filter-radio">
                     <h3>Сетка:</h3>
-                    <ul>
-                        <li class="filter-option">
-                            <input class="" type="radio" name="website-type" value="adaptive" id="filter-adaptive" checked>
-                            <label for="filter-adaptive">Адаптивная</label>
+                    <ul class="radio-list">
+                        <li class="radio-item">
+                            <input class="filter__radio-input visually-hidden" type="radio" name="website-type" value="adaptive" id="filter-adaptive" checked>
+                            <label class="filter__radio-label filter__radio-label" for="filter-adaptive">Адаптивная</label>
                         </li>
-                        <li class="filter-option">
-                            <input class="" type="radio" name="website-type" value="fix" id="filter-fix" >
-                            <label for="filter-fix">Фиксированная</label>
+                        <li class="radio-item">
+                            <input class="filter__radio-input visually-hidden" type="radio" name="website-type" value="fix" id="filter-fix" >
+                            <label class="filter__radio-label" for="filter-fix">Фиксированная</label>
                         </li>
-                        <li class="filter-option">
-                            <input class="" type="radio" name="website-type" value="rubber" id="filter-rubber" >
-                            <label for="filter-rubber">Резиновая</label>
+                        <li class="radio-item">
+                            <input class="filter__radio-input visually-hidden" type="radio" name="website-type" value="rubber" id="filter-rubber" >
+                            <label class="filter__radio-label" for="filter-rubber">Резиновая</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -112,22 +112,22 @@
             <h2 class="visually-hidden">Список готовых шаблонов</h2>
             <ul class="catalog-list">
                 <li class="catalog-item">
-                    <img width="360" height="576yyyyy" src="img/img-sedona.jpg" alt="Sedona">
+                    <img width="360" height="576" src="img/img-sedona.jpg" alt="Sedona">
                 </li>
                 <li class="catalog-item">
-                    <img width="360" height="576yyyyy" src="img/img-pink.jpg" alt="Pink App">
+                    <img width="360" height="576" src="img/img-pink.jpg" alt="Pink App">
                 </li>
                 <li class="catalog-item">
-                    <img width="360" height="576yyyyy" src="img/img-barbershop.jpg" alt="Barbershop">
+                    <img width="360" height="576" src="img/img-barbershop.jpg" alt="Barbershop">
                 </li>
                 <li class="catalog-item">
-                    <img width="360" height="576yyyyy" src="img/img-mishka.jpg" alt="MISHKA">
+                    <img width="360" height="576" src="img/img-mishka.jpg" alt="MISHKA">
                 </li>
                 <li class="catalog-item">
-                    <img width="360" height="576yyyyy" src="img/img-aplus.jpg" alt="A Plus">
+                    <img width="360" height="576" src="img/img-aplus.jpg" alt="A Plus">
                 </li>
                 <li class="catalog-item">
-                    <img width="360" height="576yyyyy" src="img/img-kvast.jpg" alt="КВАСТ">
+                    <img width="360" height="576" src="img/img-kvast.jpg" alt="КВАСТ">
                 </li>   
             </ul>
 <!--    Пагинатор        -->
