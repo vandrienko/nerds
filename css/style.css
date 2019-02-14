@@ -1144,10 +1144,12 @@ a.disabled {
     height: 15px;
     border: 5px solid rgba(40, 49, 54, 0.4);
     border-radius: 50%;
-    outline: none;
+    /* outline: none; */
 }
 
-.filter__radio-input:checked + label::before {
+
+
+.filter__radio-input:checked + .filter__radio-label::before {
     position: absolute;
     content: "";
     left: 10px;
@@ -1159,24 +1161,33 @@ a.disabled {
 
     background-color: rgba(40, 49, 54, 0.4);
     
-    /* outline: none; */
+    outline: none;
+    border: none;
+    outline:none;
 }
+
+
+
 .filter__radio-label {
     position: relative;
     z-index: 10;
     display: block;
     
     padding-left: 37px;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 
-
+.filter__radio-input:focus + .filter__radio-label::before  {
+    /* outline: none;    */
+    /* background-color: red; */
+   
+}
 
 .filter__radio-label:hover {
     color: rgba(40, 49, 54, 1); 
 
-}
+} 
 
 .radio-item .filter__radio-label:hover::before {
     background-color:rgba(40, 49, 54, 1);
@@ -1186,7 +1197,7 @@ a.disabled {
 .radio-item:hover::before {
     border-color: rgba(40, 49, 54, 1);
     cursor: pointer;
-}
+} */
 
 
   /* Каталог товаров */
