@@ -1134,70 +1134,69 @@ a.disabled {
     margin-bottom: 17px;      
 }
 
-.radio-item::before {
-    position: absolute;
-    content: "";
-    left: 1px;
-    top: -2px;
-
-    width: 15px;
-    height: 15px;
-    border: 5px solid rgba(40, 49, 54, 0.4);
-    border-radius: 50%;
-    /* outline: none; */
-}
-
-
-
 .filter__radio-input:checked + .filter__radio-label::before {
     position: absolute;
     content: "";
-    left: 10px;
-    top: 7px;
+    left: 9px;
+    top: 6px;
 
-    width: 8px;
-    height: 8px; 
+    width: 9px;
+    height: 9px; 
     border-radius: 50%;
 
-    background-color: rgba(40, 49, 54, 0.4);
-    
-    outline: none;
-    border: none;
+    background-color: #4d4d4d;
+    opacity: 0.4;
+    /* outline: none; */
+    /* border: none; */
     outline:none;
 }
 
 
 
+ .filter__radio-input:disabled + .filter__radio-label::before,
+ .filter__radio-input:disabled + .filter__radio-label::after
+  {  
+    opacity: 0.1; 
+    box-shadow: inset 0px 0px 0 4px #4d4d4d;
+    z-index: 12;
+   
+ } 
+
+ .filter__radio-label::after {
+    position: absolute;
+    content: "";
+    left: 1px;
+    top: -2px;
+
+    width: 25px;
+    height: 25px;
+    /* border: 5px solid rgba(40, 49, 54, 0.4); */
+    border-radius: 50%;
+    /* outline: none; */
+    box-shadow: inset 0px 0px 0 4px #4d4d4d;
+    opacity: 0.4;
+    /* background-color: red; */
+}
+
 .filter__radio-label {
     position: relative;
-    z-index: 10;
+    /* z-index: 10; */
     display: block;
-    
     padding-left: 37px;
+
+    color: #283136;
+    /* opacity: 0.4;     */
     cursor: pointer;
 }
-
-
-.filter__radio-input:focus + .filter__radio-label::before  {
-    /* outline: none;    */
-    /* background-color: red; */
-   
-}
-
-.filter__radio-label:hover {
-    color: rgba(40, 49, 54, 1); 
-
-} 
 
 .radio-item .filter__radio-label:hover::before {
-    background-color:rgba(40, 49, 54, 1);
+    opacity: 1;
     cursor: pointer;
 }
 
-.radio-item:hover::before {
-    border-color: rgba(40, 49, 54, 1);
-    cursor: pointer;
-} */
+.radio-item:hover::after {
+    opacity: 1;
+} 
 
 
   /* Каталог товаров */
@@ -1216,3 +1215,6 @@ a.disabled {
 .catalog-item {
     list-style: none;
 }
+
+
+
