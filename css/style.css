@@ -1102,16 +1102,16 @@ a.disabled {
     border: none;
     border-radius: 5px;
     background: #f1f1f1;
-  }
+}
   
-  .max-price {
+.max-price {
     text-align: right;
-  }
+}
 
 /* Радио кнопки */
 .filter-radio {
+    margin-bottom: 10px;
     padding-top: 1px;
-
 }
 
 .filter-radio h3 {
@@ -1137,32 +1137,32 @@ a.disabled {
 .filter__radio-input:checked + .filter__radio-label::before {
     position: absolute;
     content: "";
-    left: 9px;
     top: 6px;
-
+    left: 9px;
+    
     width: 9px;
     height: 9px; 
     border-radius: 50%;
 
     background-color: #4d4d4d;
     opacity: 0.4;
-    /* outline: none; */
-    /* border: none; */
     outline:none;
 }
 
-
-
- .filter__radio-input:disabled + .filter__radio-label::before,
- .filter__radio-input:disabled + .filter__radio-label::after
-  {  
+.filter__radio-input:disabled + .filter__radio-label::before,
+.filter__radio-input:disabled + .filter__radio-label::after {  
     opacity: 0.1; 
-    box-shadow: inset 0px 0px 0 4px #4d4d4d;
-    z-index: 12;
-   
- } 
+    box-shadow: inset 0px 0px 0 4px #4d4d4d;   
+} 
 
- .filter__radio-label::after {
+.filter__radio-input:focus + .filter__radio-label::after {
+    box-shadow: 
+        inset 0px 0px 0 4px #4d4d4d,
+        0px 0px 0px 2px #ffffff,
+        0px 0px 0px 4px rgb(59, 126, 233);
+} 
+
+.filter__radio-label::after {
     position: absolute;
     content: "";
     left: 1px;
@@ -1170,33 +1170,26 @@ a.disabled {
 
     width: 25px;
     height: 25px;
-    /* border: 5px solid rgba(40, 49, 54, 0.4); */
     border-radius: 50%;
-    /* outline: none; */
+
     box-shadow: inset 0px 0px 0 4px #4d4d4d;
     opacity: 0.4;
-    /* background-color: red; */
 }
 
 .filter__radio-label {
     position: relative;
-    /* z-index: 10; */
     display: block;
     padding-left: 37px;
 
     color: #283136;
-    /* opacity: 0.4;     */
     cursor: pointer;
 }
 
-.radio-item .filter__radio-label:hover::before {
+.radio-item .filter__radio-label:hover::before, 
+.radio-item .filter__radio-label:hover::after {
     opacity: 1;
     cursor: pointer;
 }
-
-.radio-item:hover::after {
-    opacity: 1;
-} 
 
 
   /* Каталог товаров */
