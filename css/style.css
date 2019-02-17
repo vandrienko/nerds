@@ -1218,7 +1218,7 @@ a.disabled {
 
     display: block;
     padding-left: 37px;
-    
+
     color: #283136;
     cursor: pointer;
 }
@@ -1294,6 +1294,55 @@ a.disabled {
     background-color: #d5d5d5;
     box-shadow: inset 0 3px  rgba(0, 1, 1, 0.3);
     color: rgba(0, 0, 0, 0.3);
+}
+
+/* Сортировка */
+.sorting-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sorting-title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+}
+.sorting-wrapper {
+    display: flex;
+}
+
+.sorting-list {
+    display: flex;
+
+    margin: 0;
+    list-style: none;
+}
+
+.sorting-item {
+    margin-right: 10px;
+}
+
+.sorting-controls {
+    display: flex;
+}
+.controls-down {
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 2px 0 0;
+    border: 5.5px solid transparent;
+    border-top: 10px solid #cacaca;
+    border-top-color: #81b3d2;
+}
+
+.controls-up {
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 2px 0 0;
+    border: 5.5px solid transparent;
+    border-top: 10px solid #cacaca;
+    border-top-color: #81b3d2;
 }
 
   /* Каталог товаров */
