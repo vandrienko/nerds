@@ -1511,3 +1511,32 @@ a.disabled {
 .catalog-card-active {
     display: block;
 }
+
+/* Пагинатор */
+.pagination-list {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 18px;
+    
+}
+
+.pagination-item {
+    list-style: none;
+}
+
+.pagination-link {
+    display: block;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+
+    color: #000000;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #eeeeee;
+}
+
