@@ -1400,7 +1400,6 @@ a.disabled {
     margin: 0;
     padding: 0;
     width: 760px;
-
 }
 
 .catalog-list {
@@ -1414,86 +1413,91 @@ a.disabled {
 
 .catalog-item {
     position: relative;
+
     margin-bottom: 26px;
     padding-top: 40px;
 
     list-style: none;
 }
 
-/* .catalog-item img {
-
-} */
-
 .catalog-item::before {
     position: absolute;
     content: url("../img/svg/browser.svg");
     top: 0;
-    background-color: #ffffff;
-    opacity: .12;
+
     width: 360px;
     height: 40px;
+
+    background-color: #ffffff;
+    opacity: .12;
 }
 
-.catalog-item:hover::before {
+.catalog-item:hover::before,
+.catalog-item-active::before {
     opacity: 1;
 }
 
 .catalog-card {
     position: absolute;
     content: "";
+    bottom: 7px;
     z-index: 2;
 
-    /* display: none; */
+    display: none;
 
-    bottom: 7px;
     width: 360px;
     min-height: 231px;
     max-height: 567px;
+
     background-color: #eeeeee;
 }
 
 .catalog-card-inner {
     padding-top: 27px;
-    /* background-color: #eeeeee; */
+    padding-bottom: 43px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 .catalog-title {
     margin: 0;
-    text-align: center;
+    margin-bottom: 15px;
+    max-height: 400px;
+
+    
     font-size: 18px;
     line-height: 30px;
+    text-align: center;
     text-transform: uppercase;
+    word-wrap: break-word;
+    overflow: auto;
 }
 
 .catalog-info {
     margin: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 260px;
+    max-height: 400px;
+
+ 
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
     text-align: center;
     word-wrap: break-word;
+    overflow: auto;
 }
 
 .catalog-link {
     margin: 0 auto;
-    overflow: auto;
+    width: 200px;
+    
     background-color: #fb565a;
 }
 
-
-/* .catalog-item::after {
-    position: absolute;
-    content: "";
-    z-index: 1;
-
-    display: none;
-
-    bottom: 0;
-    width: 360px;
-    height: 231px;
-    background-color: #eeeeee;
-
-} */
-
-.catalog-item:hover .catalog-card {
+.catalog-item:hover .catalog-card,
+.catalog-card-active {
     display: block;
-    /* cursor: pointer; */
 }
