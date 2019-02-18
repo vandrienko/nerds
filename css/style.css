@@ -1497,6 +1497,16 @@ a.disabled {
     background-color: #fb565a;
 }
 
+.catalog-link:hover {
+    background-color: #e74246;
+}
+
+.catalog-link:active,
+.catalog-link:focus {
+    background-color: #d7373b;
+    box-shadow: inset 0px 3px rgba(0, 1, 1, .1);
+}
+
 .catalog-item:hover .catalog-card,
 .catalog-card-active {
     display: block;
