@@ -213,16 +213,18 @@
                                     тел. +7 (812) 275-75-75
                                 </p>  
                                 <!-- </div> -->
-                                <a class="button button-red" href="#">Напишите нам</a>
+                                <a class="button button-red modal-open" href="#">Напишите нам</a>
                             </div>
-                    </div>
-                      
+                    </div>                      
                 </section>
-                <!-- Модальное окно обратной связи"Напишите нам"       -->
-                <section class="modal modal-login">
-                    <h2 class="modal-hidden">Напишите нам</h2>
-                    <p class="modal-info">Напишите нам по интересующему вас вопросу, и мы с вами свяжемся.</p>
-                    <form action="modal-form">
+                <!-- Модальное окно обратной связи"Напишите нам" -->
+                <section class="modal modal-form-close">
+                    <!-- <div>   -->
+                    <h2 class="visually-hidden">Форма обратной связи</h2>
+                    <!-- <p class="modal-info">Напишите нам по интересующему вас вопросу, и мы с вами свяжемся.</p> -->
+                    <form class="modal-form" action="modal-form">
+                        <h3 class="modal-hidden">Напишите нам</h2>
+                        <div class="item-wrapper">
                         <p class="modal-item">
                             <label for="modal-name">Ваше имя:</label>
                             <input id="modal-name" type="text" name="modal-name" value="" placeholder="Имя Фамилия">
@@ -231,14 +233,17 @@
                             <label for="modal-email">Ваш e-mail:</label>
                             <input id="modal-email" type="text" name="modal-mail" value="" placeholder="email@gmail.com">    
                         </p>
+                        </div>
                         <p class="modal-item">
                             <label for="modal-text">Текст письма:</label>
                             <textarea name="modal-text" id="modal-text" cols="30" rows="5" placeholder="В свободной форме"></textarea>                
                         </p>
-                        <button class="button" type="submit">Отправить</button>
+                        <button class="button button-modal" type="submit">Отправить</button>
                     </form>
                     <button class="modal-close" type="button">Закрыть</button>
-                </section>            
+                    <!-- </div>   -->
+                </section>      
+
                 <div class="footer-container">
                     <div class="promo-container">
                         <b class="footer-social-promo">Давайте дружить, это выгодно!</b>
@@ -293,6 +298,14 @@
             </footer>
 
         <!-- </div>     -->
+        <script>
+            var form_open = document.querySelector(".modal-open");     
+            var form_close = document.querySelector(".modal-close");    
+            
+            form_open.addEventListener("click", function (evt) {             
+            form_open.add("modal-form-show");              
+            });  
+        </script>
     </body>
 </html>
 
