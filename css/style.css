@@ -983,6 +983,7 @@ a.disabled {
     
     font-size: 55px;
     line-height: 55px;
+    font-weight: 500;
     color: #000000;
     background-color: #eeeeee ;
 }
@@ -1302,7 +1303,7 @@ a.disabled {
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 50px;
+    margin-bottom: 51px;
 }
 
 .sorting-title {
@@ -1331,20 +1332,21 @@ a.disabled {
     text-transform: uppercase;
 }
 
-.sorting-linc {
+.sorting-link {
     font-size: 14px;
+    line-height: 18px;
 
     color: #000000;
     opacity: .3;
 }
 
-.sorting-linc:hover {
+.sorting-link:hover {
     opacity: .6;
 }
 
-.sorting-linc:active,
-.sorting-linc:focus,
-.sorting-linc-active {
+.sorting-link:active,
+.sorting-link:focus,
+.sorting-link-active {
     opacity: 1;
 }
 
@@ -1372,8 +1374,6 @@ a.disabled {
     height: 0;  
     border: 5.5px solid transparent;
     border-bottom: 10px solid #a6a6a6;
-
-    opacity: .2;
 }
 
 .controls-down:hover,
@@ -1517,6 +1517,7 @@ a.disabled {
 /* Пагинатор */
 .pagination-list {
     display: flex;
+    flex-wrap: wrap;
 
     margin: 0;
     padding: 0;
