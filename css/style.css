@@ -910,8 +910,55 @@ a.disabled {
 
 .modal-close {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 80px;
+    right: 85px;
+    width: 30px;
+    height: 30px;
+
+    background-color: #ffffff;
+    border: none;
+
+    cursor: pointer;
+    opacity: .3;
+} 
+
+.modal-close::before {
+    position: absolute;
+
+    content: "";
+    top: 12px;
+    left: 0px;
+
+    width: 30px;
+    height: 5px;
+
+    background-color: #fb565a;
+  
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    position: absolute;
+
+    content: "";
+    top: 12px;
+    left: 0px;
+
+    width: 30px;
+    height: 5px;
+
+    background-color: #fb565a;
+  
+    transform: rotate(-45deg);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    opacity: 1;
+}
+
+.modal-close:active {
+    opacity: .1;
 }
 
 .button-modal {
