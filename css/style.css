@@ -883,7 +883,6 @@ a.disabled {
     flex-direction: column;
     color: #000000;
     line-height: 18px;
-
 }
 
 .modal-item label {
@@ -905,8 +904,8 @@ a.disabled {
     display: block;
 }
 
-.modal-form-close {
-    display: none;
+.modal-none {
+    display: none; 
 }
 
 .modal-close {

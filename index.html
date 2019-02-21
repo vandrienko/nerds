@@ -213,12 +213,12 @@
                                     тел. +7 (812) 275-75-75
                                 </p>  
                                 <!-- </div> -->
-                                <a class="button button-red modal-open" href="#">Напишите нам</a>
+                                <a class="button button-red button-modal-open" href="#">Напишите нам</a>
                             </div>
                     </div>                      
                 </section>
                 <!-- Модальное окно обратной связи"Напишите нам" -->
-                <section class="modal modal-form-close">
+                <section class="modal modal-none">
                     <!-- <div>   -->
                     <h2 class="visually-hidden">Форма обратной связи</h2>
                     <!-- <p class="modal-info">Напишите нам по интересующему вас вопросу, и мы с вами свяжемся.</p> -->
@@ -298,13 +298,29 @@
             </footer>
 
         <!-- </div>     -->
-        <script>
-            var form_open = document.querySelector(".modal-open");     
-            var form_close = document.querySelector(".modal-close");    
-            
-            form_open.addEventListener("click", function (evt) {             
-            form_open.add("modal-form-show");              
+        <script>      
+            var form = document.querySelector(".modal-none");   
+            var button_open = document.querySelector(".button-modal-open");
+            var button_close = document.querySelector(".modal-close");
+
+            button_open.addEventListener("click", function (evt) { 
+                evt.preventDefault();   
+                form.classList.remove("modal-none");                   
+            }); 
+
+            button_close.addEventListener("click", function (evt) {  
+                evt.preventDefault();  
+                form.classList.add("modal-none");                   
             });  
+
+            window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+            evt.preventDefault();
+            if (!form.classList.contains("modal-none")) {
+            form.classList.add("modal-none");
+                }
+            }
+            });   
         </script>
     </body>
 </html>
